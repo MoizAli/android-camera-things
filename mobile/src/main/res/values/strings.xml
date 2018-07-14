@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Smart Doorbell</string>
+  <string name="title_activity_main">MainActivity</string>
+  <string name="default_notification_channel_id">MainActivity</string>
+</resources>
