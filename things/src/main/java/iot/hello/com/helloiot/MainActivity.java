@@ -137,8 +137,7 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		MultipartBody.Part filePart = MultipartBody.Part.createFormData("file", file.getName(), RequestBody.create(MediaType.parse("image/*"), file));
-		imageUploaderService.uploadImage(filePart).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.newThread())
-				.subscribe((uploadFileResponse, throwable) -> {
+		imageUploaderService.uploadImage(filePart).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.newThread()).subscribe((uploadFileResponse, throwable) -> {
 		});
 
 		mainHandler.post(() -> imageView1.setImageBitmap(Bitmap.createScaledBitmap(bmp, imageView1.getWidth(), imageView1.getHeight(), false)));

@@ -7,6 +7,13 @@
   android:layout_height="match_parent"
   tools:context="iot.hello.com.helloiot.MainActivity">
 
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Press A"
+    android:gravity="center"
+    android:textSize="20sp"/>
+
   <ImageView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
